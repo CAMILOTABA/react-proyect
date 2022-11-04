@@ -5,7 +5,7 @@ import { HomeOutlined, UserOutlined} from "@ant-design/icons";
 import "./MenuSider.scss";
 
 export const MenuSider = (props) => {
-    const { sider } = Layout;
+    const { Sider } = Layout;
     const location =useLocation();
     const navigate = useNavigate();
     const menuItems = [
@@ -25,7 +25,7 @@ export const MenuSider = (props) => {
         navigate(path);
     };
     return (
-        <sider className="admin-sider" collapsed={props.menuCollapsed}>
+        <Sider className="admin-sider" collapsed={props.menuCollapsed}>
             <Menu
             theme="aliceblue"
             mode="inline"
@@ -33,7 +33,7 @@ export const MenuSider = (props) => {
             onClick={menuClick}
             items={menuItems}
             />
-        </sider>
+        </Sider>
     );
 };
 export default MenuSider;
