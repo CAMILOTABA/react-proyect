@@ -1,4 +1,4 @@
-const user_route = require("./src/routes/user.router");
+const user_route = require("./src/routes/user");
 const express = require("express");
 const mongoose = require("mongoose");
 const app = require("./app");
